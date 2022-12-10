@@ -45,7 +45,7 @@ let validateHTML = () => {
 };
 
 let validateJS = () => {
-    return src(`scripts/main.js`)
+    return src([`scripts/main.js`,`gulpfile.js`])
         .pipe(jsValidator())
         .pipe(jsValidator.formatEach(`compact`, process.stderr));
 };
