@@ -84,3 +84,18 @@ nav > ul > li > ul a {
   left: 35%;
   top: 25%;
 }
+
+@media (max-width: 736px) {
+  nav {
+    margin-left: auto;
+  }
+
+  nav ul:nth-child(1) {
+    display: block;
+  }
+
+  nav ul:nth-child(2) {
+    left: 150px;
+    top: 16px;
+  }
+}

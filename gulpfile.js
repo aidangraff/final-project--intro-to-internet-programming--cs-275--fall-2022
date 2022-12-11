@@ -93,6 +93,7 @@ exports.transpileJSForProd = transpileJSForProd;
 exports.serve = series(
     validateCSS,
     validateJS,
+    validateHTML,
     transpileJSForDev,
     serve
 );
