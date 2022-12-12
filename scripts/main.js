@@ -19,4 +19,7 @@ modal.addEventListener (`click`, () => {
         hiddenModal.classList.add(`hidden`);
     }});
 
-
+document.addEventListener (`keydown`, (e) => {
+    if (e.key === `Escape` & (!(hiddenModal.classList.contains(`hidden`)))) {
+        modal.click();
+    }});
