@@ -60,7 +60,7 @@ let transpileJSForProd = () => {
     return src(`scripts/main.js`)
         .pipe(babel())
         .pipe(jsCompressor())
-        .pipe(dest(`prod/scripts/main.js`));
+        .pipe(dest(`prod/scripts`));
 };
 
 let serve = () => {
